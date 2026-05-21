@@ -1,0 +1,363 @@
+{
+  "info": {
+    "_postman_id": "80cda878-7c40-45f2-a0d8-0333bf5e1076",
+    "name": "Olimp",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55034711"
+  },
+  "item": [
+    {
+      "name": "200 all",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.qasandbox.ru/api/mythology",
+          "protocol": "https",
+          "host": [
+            "api",
+            "qasandbox",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "mythology"
+          ],
+          "query": [
+            {
+              "key": "category",
+              "value": "all",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "category",
+              "value": "gods",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "category",
+              "value": "heroes",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "200 one",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.qasandbox.ru/api/mythology/42",
+          "protocol": "https",
+          "host": [
+            "api",
+            "qasandbox",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "mythology",
+            "42"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "201 Sing Up",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"Jud0s\",\r\n  \"password\": \"Jud0s\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.qasandbox.ru/api/register",
+          "protocol": "https",
+          "host": [
+            "api",
+            "qasandbox",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "200 Sing In",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"Jud0s\",\r\n  \"password\": \"Jud0s\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.qasandbox.ru/api/login",
+          "protocol": "https",
+          "host": [
+            "api",
+            "qasandbox",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "201 Create Mythology",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikp1ZDBzIiwiaWF0IjoxNzc5Mjc0MTU0LCJleHAiOjE3Nzk4Nzg5NTR9.bQDB6MVGStPd-wnCtLFkVnFHNGmxwNF_MNMrGSNESOQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Irodondon\",\r\n  \"category\": \"gods\",\r\n  \"desc\": \"Бог коду та якості\",\r\n  \"img\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYFb41k8-iad8KBmeFVCc_fClL-0jw2BqOFQ&s\"\r\n}"
+        },
+        "url": {
+          "raw": "https://api.qasandbox.ru/api/mythology",
+          "protocol": "https",
+          "host": [
+            "api",
+            "qasandbox",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "mythology"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "200 Update a Creature",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Посейдонdon\",\r\n  \"category\": \"gods\",\r\n  \"desc\": \"God of code and development\",\r\n  \"img\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYFb41k8-iad8KBmeFVCc_fClL-0jw2BqOFQ&s\"\r\n}"
+        },
+        "url": {
+          "raw": "https://api.qasandbox.ru/api/mythology/104",
+          "protocol": "https",
+          "host": [
+            "api",
+            "qasandbox",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "mythology",
+            "104"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "200 Update a part of Creature",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"string\",\r\n  \"category\": \"gods\",\r\n  \"desc\": \"updated description\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.qasandbox.ru/api/mythology/102",
+          "protocol": "https",
+          "host": [
+            "api",
+            "qasandbox",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "mythology",
+            "102"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "204 Delete a Creature",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 204\", function () {\r",
+              "    pm.response.to.have.status(204);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"string\",\r\n  \"category\": \"gods\"\r\n}\r\n"
+        },
+        "url": {
+          "raw": "https://api.qasandbox.ru/api/mythology/102",
+          "protocol": "https",
+          "host": [
+            "api",
+            "qasandbox",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "mythology",
+            "102"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "403 Delete a Creature",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"string\",\r\n  \"category\": \"gods\"\r\n}\r\n"
+        },
+        "url": {
+          "raw": "https://api.qasandbox.ru/api/mythology/31",
+          "protocol": "https",
+          "host": [
+            "api",
+            "qasandbox",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "mythology",
+            "31"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "405 Create Mythology with id",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://api.qasandbox.ru/api/mythology/100",
+          "protocol": "https",
+          "host": [
+            "api",
+            "qasandbox",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "mythology",
+            "100"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikp1ZDBzIiwiaWF0IjoxNzc5Mjc0MTU0LCJleHAiOjE3Nzk4Nzg5NTR9.bQDB6MVGStPd-wnCtLFkVnFHNGmxwNF_MNMrGSNESOQ",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
