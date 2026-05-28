@@ -3,7 +3,9 @@ Bug ID: B1
 Title: У інтерфейсі переглядача YouTube опис елемента «Like it»  не відповідає реальному значенню. 
 
 Severity: Trivial
+
 Priority: Medium
+
 Type: UI / Visual
 
 Reproducibility: Always  
