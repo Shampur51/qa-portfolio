@@ -10,18 +10,12 @@ Type: UI / Visual
 
 Reproducibility: Always  
 
-Середовище
-
+Середовище:
 URL: https://www.youtube.com/watch?v=hbe3CQamF8k&list=RDhbe3CQamF8k&start_radio=1
-
 Browser: Chrome148.0.7778.179  (64 bit)
-
 OS: win 11 - 25H2
-
 Screen resolution:  1920×1080
-
 Build / Version: 
-
 Test account: xxx@gmail.com
 
 Передумови:
@@ -42,6 +36,7 @@ Workaround: -
 Related bugs: -
 
 Вкладення:
+
 ![Bug screenshot](images/YouTube_BagRep1.png)
 
 Status:
