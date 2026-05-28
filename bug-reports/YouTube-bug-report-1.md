@@ -1,11 +1,9 @@
 Bug ID: B1
 
-Title: У інтерфейсі YouTube опис елементу елемент «Like it»  не відповідає реальному значенню. 
+Title: У інтерфейсі переглядача YouTube опис елемента «Like it»  не відповідає реальному значенню. 
 
 Severity: Trivial
-
 Priority: Medium
-
 Type: UI / Visual
 
 Reproducibility: Always  
@@ -19,18 +17,17 @@ Build / Version:
 Test account: xxx@gmail.com
 
 Передумови:
-В обліковий запис gmail увійдено.
-Довільне відео увімкнено
-Переглядач відкрито на повний екран
+1. В обліковий запис gmail увійдено
+2. Довільне відео увімкнено
 
 Кроки відтворення:
-Навести курсор на елемент «Like it»
+Навести курсор на елемент «Like it» під вікном переглядачу
 
 Expected:
-Фоновий елемент, що показує стан hover однаковий для «Like it» та «Don’t like it»
+З’являється надпис з поясненням кнопки «І like it»
 
 Actual:
-Фоновий елемент, що показує стан hover відрізняється для «Like it» та «Don’t like it»
+З’являється надпис з поясненням кнопки «І don’t like it anymore»
 
 Workaround: -
 Related bugs: -
