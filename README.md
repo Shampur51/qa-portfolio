@@ -1,2 +1,31 @@
 # qa-portfolio
-QA testing artifacts: checklists, test cases, API tests, bug reports
+# QA Portfolio — Tymur Komisar
+
+> Junior QA Engineer | Manual Testing | API Testing | Bug Reporting
+
+---
+
+## About
+
+I'm an aspiring QA Engineer with a technical background in 
+Information Systems & Technologies (Taras Shevchenko National 
+University of Kyiv). This repository contains practical QA 
+artifacts I've built during my studies — test cases, bug reports, 
+API test collections, and checklists.
+
+---
+
+## 📁 Repository Structure
+qa-portfolio/
+├── api-tests/              — Postman collections + Newman reports
+├── bug-reports/            — Structured bug reports with screenshots
+│   └── images/             — Screenshots and attachments
+├── test-cases/             — Test cases in IEEE 829 format
+     └── images/            — Screenshots and attachments
+└── checklists/             — Smoke and regression checklists
+
+## 📬 Contact
+
+- **Email:** komistimur91@gmail.com
+- **LinkedIn:** [linkedin.com/in/tymur-komisar](https://linkedin.com/in/tymur-komisar)
+- **Location:** Kyiv, Ukraine — open to remote
