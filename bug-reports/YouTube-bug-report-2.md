@@ -35,7 +35,7 @@ Related bugs: -
 
 Вкладення:
 
-![Bug screenshot](YouTube_BagRep2.png)
+![Bug screenshot](images/YouTube_BagRep2.png)
 
 Status: New
 
