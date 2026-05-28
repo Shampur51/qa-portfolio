@@ -3,18 +3,26 @@ Author:
 Created:
 Last Updated:
 Version:
+
 Priority: Високий 
-Severity: Critical Test Type: Smoke, Positive 
+
+Severity: Critical 
+
+Test Type: Smoke, Positive 
+
 Test Level: Unit test
+
 Test Design Technique: EP
+
 Automated: Ні
 Linked Requirement: Some Req Nxxx
+
 Description:
 Перевірка розташування кімнати з валідними значеннями
 
 Preconditions:
-Вхід в застосунок здійснено
-Відкрито конструктор побудови топологій
+1. Вхід в застосунок здійснено
+2. Відкрито конструктор побудови топологій
 
 Test Data:
 Розміри кімнати 6 на 6 одиниць
